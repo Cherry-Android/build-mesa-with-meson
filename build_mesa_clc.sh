@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# stop when error occurs
+set -xe
+
 SRC_PATH="$1"
 BUILD_PATH="$2"
 
