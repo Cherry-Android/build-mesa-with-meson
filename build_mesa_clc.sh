@@ -11,9 +11,10 @@ meson setup \
 	-Dstrip=true \
 	-Dplatforms= \
 	-Dgallium-drivers= \
-    -Dvulkan-drivers= \
+	-Dvulkan-drivers= \
 	-Dmesa-clc=enabled \
 	-Dinstall-mesa-clc=true \
+	-Dtools=panfrost \
 	--reconfigure \
 	--wipe \
 	"${BUILD_PATH}" \
