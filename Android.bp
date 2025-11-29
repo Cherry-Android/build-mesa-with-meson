@@ -44,26 +44,3 @@ cc_prebuilt_library_shared {
     check_elf_files: false,
     vendor: true
 }
-
-cc_prebuilt_library_shared {
-    name: "libgbm_mesa",
-    srcs: ["libgbm_mesa.so"],
-    strip: {
-        none: true,
-    },
-    shared_libs: ["libc", "libdl", "libdrm", "libcutils"],
-    check_elf_files: false,
-    vendor: true
-}
-
-cc_prebuilt_library_shared {
-    name: "dri_gbm",
-    srcs: ["dri_gbm.so"],
-    strip: {
-        none: true,
-    },
-    shared_libs: ["libc", "libm", "libgallium_dri", "libdrm", "libcutils"],
-    check_elf_files: false,
-    vendor: true
-}
-
